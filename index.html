@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Super Mario</title>
+  </head>
+
+  <body>
+    <div class="video-mario">
+      <video src="./video.mp4" autoplay muted loop></video>
+      <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+      <img src="./logo.png" alt="logo super mario" class="logo-mario" />
+      <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+      <p>Você já se encontrou em uma situação de emergência com encanamento?
+        Vazamentos inesperados, canos entupidos ou torneiras que não param de
+        pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+        Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+        <button onclick="cliqueiNoBotao()">Fale conosco</button>
+    </div>
+
+    <img src="./mario.png" alt="super mario" class="imagem-mario-luid" />
+
+    <form class="fale-conosco">
+      <button>Fale Conosco</button>
+      <input placeholder="Seu nome" type="text" />
+      <input placeholder="Seu telefone" type="tel" />
+      <textarea placeholder="Digite aqui o seu problema"></textarea>
+      <button onclick="sumirFormulario()">Enviar formulário</button>
+    </form>
+
+    <div class="mascara-form"></div>
+  </body>
+  <script>
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+
+    function cliqueiNoBotao(){
+        formulario.style.left = "800px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirFormulario(){
+        formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+    }
+    
+</script>
+
+</html>
