@@ -20,7 +20,7 @@ body {
 
 .imagem-mario-luid {
 
-    height: 600px;
+    height: 700px;
 }
  
 .caixa-pricipal {
@@ -31,7 +31,7 @@ P {
     width: 800px;
     color: white;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 video {
